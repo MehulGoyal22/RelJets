@@ -1,0 +1,1338 @@
+ FLASH log file:  06-04-2025  03:18:14.808    Run number:  1
+ ==============================================================================
+ Number of MPI tasks:                  6
+ MPI version:                          3
+ MPI subversion:                       1
+ Dimensionality:                       2
+ Max Number of Blocks/Proc:         1000
+ Number x zones:                       8
+ Number y zones:                       8
+ Number z zones:                       1
+ Setup stamp:     Wed Jun 4 03:15:53 2025
+ Build stamp:     Wed Jun 4 03:16:36 2025
+ System info:     Linux login02 4.18.0-513.5.1.el8_9.x86_64 #1 SMP Mon Nov 20 08:56:15 EST 2023 x8
+ Version:         FLASH 4.7.trunk                                                                 
+ Build directory: /home/IITB/CompnalAstrphyNRelvity/mehul.goyal/package/flash4.7.1/FLASH4.7.1/obje
+ Setup syntax:    /home/IITB/CompnalAstrphyNRelvity/mehul.goyal/package/flash4.7.1/FLASH4.7.1/bin/setup.py RHD_Blastwave -2d -auto -site=ParamRudra.IITB
+ f compiler flags: mpif90 -ggdb -c -O2 -fdefault-real-8 -fdefault-double-8 -ffree-line-length-none -Wuninitialized -DMAXBLOCKS=1000 -DNXB=8 -DNYB=8 -DNZB=1 -DN_DIM=2
+ c compiler flags:    mpicc -I/home/apps/spack/opt/spack/linux-almalinux8-cascadelake/intel-2021.10.0/hdf5-1.14.5-uipptrnueaesraykojdo56ypjjcvb2ey/include -DH5_USE_16_API -ggdb -c -O2 -Wuninitialized -D_FORTIFY_SOURCE=2 -DMAXBLOCKS=1000 -DNXB=8 -DNYB=8 -DNZB=1 -DN_DIM=2
+ ==============================================================================
+ Comment:  Sedov explosion
+ ==============================================================================
+ FLASH Units used:
+   Driver/DriverMain/Unsplit
+   Driver/localAPI
+   Grid/GridBoundaryConditions
+   Grid/GridMain/paramesh/interpolation/Paramesh4/prolong
+   Grid/GridMain/paramesh/interpolation/prolong
+   Grid/GridMain/paramesh/paramesh4/Paramesh4dev/PM4_package/headers
+   Grid/GridMain/paramesh/paramesh4/Paramesh4dev/PM4_package/mpi_source
+   Grid/GridMain/paramesh/paramesh4/Paramesh4dev/PM4_package/source
+   Grid/GridMain/paramesh/paramesh4/Paramesh4dev/PM4_package/utilities/multigrid
+   Grid/GridMain/paramesh/paramesh4/Paramesh4dev/flash_avoid_orrery
+   Grid/localAPI
+   IO/IOMain/hdf5/serial/PM
+   IO/localAPI
+   PhysicalConstants/PhysicalConstantsMain
+   RuntimeParameters/RuntimeParametersMain
+   Simulation/SimulationMain/RHD_BlastWave
+   flashUtilities/contiguousConversion
+   flashUtilities/general
+   flashUtilities/interpolation/oneDim
+   flashUtilities/nameValueLL
+   flashUtilities/sorting/quicksort
+   flashUtilities/system/memoryUsage/legacy
+   monitors/Logfile/LogfileMain
+   monitors/Timers/TimersMain/MPINative
+   physics/Eos/EosMain/Gamma
+   physics/Eos/localAPI
+   physics/Hydro/HydroMain/unsplit/Hydro_Unsplit
+   physics/Hydro/localAPI
+ ==============================================================================
+ RuntimeParameters:
+                                                                               
+ ==============================================================================
+bndpriorityone              =          1
+bndprioritythree            =          3
+bndprioritytwo              =          2
+checkpointfileintervalstep  =          0
+checkpointfilenumber        =          0
+dr_abortpause               =          2
+dr_dtminbelowaction         =          1
+dr_numposdefvars            =          4
+drift_break_inst            =          0
+drift_trunc_mantissa        =          2
+drift_verbose_inst          =          0
+eos_entrelescalechoice      =          6
+eos_loglevel                =        700
+fileformatversion           =          9
+forcedplotfilenumber        =          0
+gp_radius                   =          2
+gr_lrefmaxtimevalue_1       =         -1
+gr_lrefmaxtimevalue_10      =         -1
+gr_lrefmaxtimevalue_11      =         -1
+gr_lrefmaxtimevalue_12      =         -1
+gr_lrefmaxtimevalue_13      =         -1
+gr_lrefmaxtimevalue_14      =         -1
+gr_lrefmaxtimevalue_15      =         -1
+gr_lrefmaxtimevalue_16      =         -1
+gr_lrefmaxtimevalue_17      =         -1
+gr_lrefmaxtimevalue_18      =         -1
+gr_lrefmaxtimevalue_19      =         -1
+gr_lrefmaxtimevalue_2       =         -1
+gr_lrefmaxtimevalue_20      =         -1
+gr_lrefmaxtimevalue_3       =         -1
+gr_lrefmaxtimevalue_4       =         -1
+gr_lrefmaxtimevalue_5       =         -1
+gr_lrefmaxtimevalue_6       =         -1
+gr_lrefmaxtimevalue_7       =         -1
+gr_lrefmaxtimevalue_8       =         -1
+gr_lrefmaxtimevalue_9       =         -1
+gr_pmrpdivergencefree       =          1
+gr_pmrpifaceoff             =          0
+gr_pmrpl2p5d                =         -1
+gr_pmrpmaxblocks            =         -1
+gr_pmrpmflags               =          1
+gr_pmrpnboundaries          =          4
+gr_pmrpndim                 =          2
+gr_pmrpnedgevar1            =         -1
+gr_pmrpnfacevar             =         -1
+gr_pmrpnfielddivf           =         -1
+gr_pmrpnfluxvar             =         -1
+gr_pmrpnguard               =         -1
+gr_pmrpnguardwork           =         -1
+gr_pmrpnvar                 =         -1
+gr_pmrpnvarwork             =          1
+gr_pmrpnvarcorn             =          0
+gr_pmrpnvaredge             =          0
+gr_pmrpnxb                  =         -1
+gr_pmrpnyb                  =         -1
+gr_pmrpnzb                  =          1
+gr_restrictallmethod        =          3
+gr_sanitizedatamode         =          1
+gr_sanitizeverbosity        =          5
+hy_3torder                  =         -1
+hydrocomputedtoption        =         -1
+iprocs                      =          1
+interpol_order              =          2
+irenorm                     =          0
+jprocs                      =          1
+kprocs                      =          1
+lrefine_del                 =          0
+lrefine_max                 =          6 [CHANGED]
+lrefine_min                 =          1
+lrefine_min_init            =          1
+max_particles_per_blk       =        100
+memory_stat_freq            =     100000
+meshcopycount               =          1
+min_particles_per_blk       =          1
+nbegin                      =          1
+nblockx                     =          1
+nblocky                     =          1
+nblockz                     =          1
+nend                        =      10000 [CHANGED]
+nrefs                       =          2
+nsteptotalsts               =          5
+order                       =          3 [CHANGED]
+outputsplitnum              =          1
+plotfileintervalstep        =          0
+plotfilenumber              =          0
+refine_var_count            =          4
+rolling_checkpoint          =      10000
+sim_centerrefinelevel       =          1
+sim_integralslevel          =         -1
+sim_nsubzones               =          7
+sweeporder                  =        123
+transorder                  =          1
+wr_integrals_freq           =          1
+limitedslopebeta            =                 0.100E+01
+poskappa1                   =                 0.400E+00
+poskappa2                   =                 0.400E+00
+cfl                         =                 0.800E+00
+checkpointfileintervaltime  =                 0.100E-01 [CHANGED]
+checkpointfileintervalz     =                 0.180+309
+cvisc                       =                 0.100E+00
+derefine_cutoff_1           =                 0.200E+00
+derefine_cutoff_2           =                 0.200E+00
+derefine_cutoff_3           =                 0.200E+00
+derefine_cutoff_4           =                 0.200E+00
+dr_dtmincontinue            =                 0.000E+00
+dr_posdefdtfactor           =                 0.100E+01
+dr_tstepslowstartfactor     =                 0.100E+00
+dtinit                      =                 0.100E-09
+dtmax                       =                 0.100E+06
+dtmin                       =                 0.100E-09
+eintswitch                  =                 0.100E-03 [CHANGED]
+eos_mfaspeciesa             =                 0.100E+01
+eos_mfaspeciesz             =                 0.100E+01
+eos_mfbspeciesa             =                 0.100E+01
+eos_mfbspeciesz             =                 0.100E+01
+eos_singlespeciesa          =                 0.100E+01
+eos_singlespeciesz          =                 0.100E+01
+gamma                       =                 0.140E+01 [CHANGED]
+gammaa                      =                 0.167E+01
+gammab                      =                 0.167E+01
+gp_elldel                   =                 0.120E+02
+gp_sigdel                   =                 0.200E+01
+gr_lrefinemaxredlogbase     =                 0.100E+02
+gr_lrefinemaxredradiusfact  =                 0.000E+00
+gr_lrefinemaxredtref        =                 0.000E+00
+gr_lrefinemaxredtimescale   =                 0.100E+01
+gr_lrefmaxtime_1            =                -0.100E+01
+gr_lrefmaxtime_10           =                -0.100E+01
+gr_lrefmaxtime_11           =                -0.100E+01
+gr_lrefmaxtime_12           =                -0.100E+01
+gr_lrefmaxtime_13           =                -0.100E+01
+gr_lrefmaxtime_14           =                -0.100E+01
+gr_lrefmaxtime_15           =                -0.100E+01
+gr_lrefmaxtime_16           =                -0.100E+01
+gr_lrefmaxtime_17           =                -0.100E+01
+gr_lrefmaxtime_18           =                -0.100E+01
+gr_lrefmaxtime_19           =                -0.100E+01
+gr_lrefmaxtime_2            =                -0.100E+01
+gr_lrefmaxtime_20           =                -0.100E+01
+gr_lrefmaxtime_3            =                -0.100E+01
+gr_lrefmaxtime_4            =                -0.100E+01
+gr_lrefmaxtime_5            =                -0.100E+01
+gr_lrefmaxtime_6            =                -0.100E+01
+gr_lrefmaxtime_7            =                -0.100E+01
+gr_lrefmaxtime_8            =                -0.100E+01
+gr_lrefmaxtime_9            =                -0.100E+01
+hy_cflfallbackfactor        =                 0.900E+00
+hy_fpresinmomflux           =                 0.100E+01
+hybridorderkappa            =                 0.000E+00
+nusts                       =                 0.200E+00 [CHANGED]
+plotfileintervaltime        =                 0.000E+00 [CHANGED]
+plotfileintervalz           =                 0.180+309
+refine_cutoff_1             =                 0.800E+00
+refine_cutoff_2             =                 0.800E+00
+refine_cutoff_3             =                 0.800E+00
+refine_cutoff_4             =                 0.800E+00
+refine_filter_1             =                 0.100E-01
+refine_filter_2             =                 0.100E-01
+refine_filter_3             =                 0.100E-01
+refine_filter_4             =                 0.100E-01
+rss_limit                   =                -0.100E+01
+sim_derefineradius          =                 0.000E+00
+sim_earliestlstime          =                 0.000E+00
+sim_expenergy               =                 0.100E+01
+sim_largestnormradius       =                 0.180+309
+sim_latestlstime            =                 0.180+309
+sim_minrhoinit              =                 0.100E-19
+sim_pambient                =                 0.100E-04
+sim_rinit                   =                 0.137E-01 [CHANGED]
+sim_rhoambient              =                 0.100E+01
+sim_smallestnormradius      =                 0.000E+00
+sim_xctr                    =                 0.500E+00
+sim_yctr                    =                 0.500E+00
+sim_zctr                    =                 0.500E+00
+small                       =                 0.100E-09
+smalle                      =                 0.100E-09
+smallp                      =                 0.100E-09
+smallt                      =                 0.100E-09
+smallu                      =                 0.100E-09
+smallx                      =                 0.100E-09
+smlrho                      =                 0.100E-09
+tinitial                    =                 0.000E+00
+tiny                        =                 0.100E-15
+tmax                        =                 0.500E-01 [CHANGED]
+tstep_change_factor         =                 0.200E+01
+wall_clock_checkpoint       =                 0.432E+05
+wall_clock_time_limit       =                 0.605E+06
+x_refine_center             =                 0.000E+00
+xmax                        =                 0.100E+01
+xmin                        =                 0.000E+00
+y_refine_center             =                 0.000E+00
+ymax                        =                 0.100E+01
+ymin                        =                 0.000E+00
+zfinal                      =                 0.000E+00
+zinitial                    =                -0.100E+01
+z_refine_center             =                 0.000E+00
+zmax                        =                 0.100E+01
+zmin                        =                 0.000E+00
+riemannsolver               = Roe                            [CHANGED]
+unitsystem                  = none                          
+basenm                      = sedov_                         [CHANGED]
+dr_posdefvar_1              = none                          
+dr_posdefvar_2              = none                          
+dr_posdefvar_3              = none                          
+dr_posdefvar_4              = none                          
+entropyfixmethod            = HARTENHYMAN                   
+eosmode                     = dens_ie                       
+eosmodeinit                 = dens_ie                       
+geometry                    = cartesian                     
+gr_pmrpoutputdir            = ./                            
+grav_boundary_type          = isolated                      
+hy_eosmodegc                = see eosMode                   
+log_file                    = sedov.log                      [CHANGED]
+output_directory            =                               
+pc_unitsbase                = CGS                           
+plot_grid_var_1             = none                          
+plot_grid_var_10            = none                          
+plot_grid_var_11            = none                          
+plot_grid_var_12            = none                          
+plot_grid_var_2             = none                          
+plot_grid_var_3             = none                          
+plot_grid_var_4             = none                          
+plot_grid_var_5             = none                          
+plot_grid_var_6             = none                          
+plot_grid_var_7             = none                          
+plot_grid_var_8             = none                          
+plot_grid_var_9             = none                          
+plot_var_1                  = dens                           [CHANGED]
+plot_var_10                 = none                          
+plot_var_11                 = none                          
+plot_var_12                 = none                          
+plot_var_13                 = none                          
+plot_var_14                 = none                          
+plot_var_15                 = none                          
+plot_var_16                 = none                          
+plot_var_17                 = none                          
+plot_var_18                 = none                          
+plot_var_2                  = pres                           [CHANGED]
+plot_var_3                  = temp                           [CHANGED]
+plot_var_4                  = velx                           [CHANGED]
+plot_var_5                  = vely                           [CHANGED]
+plot_var_6                  = ener                           [CHANGED]
+plot_var_7                  = none                          
+plot_var_8                  = none                          
+plot_var_9                  = none                          
+prof_file                   = profile.dat                   
+refine_var_1                = dens                           [CHANGED]
+refine_var_2                = pres                           [CHANGED]
+refine_var_3                = none                          
+refine_var_4                = none                          
+run_comment                 = Sedov explosion                [CHANGED]
+run_number                  = 1                             
+sim_proffilename            = /dev/null                     
+slopelimiter                = mc                             [CHANGED]
+stats_file                  = flash.dat                     
+wenomethod                  = WENO5                         
+xl_boundary_type            = outflow                        [CHANGED]
+xr_boundary_type            = outflow                        [CHANGED]
+yl_boundary_type            = outflow                        [CHANGED]
+yr_boundary_type            = outflow                        [CHANGED]
+zl_boundary_type            = outflow                        [CHANGED]
+zr_boundary_type            = outflow                        [CHANGED]
+eosforriemann               =  F
+addthermalflux              =  T
+allowdtstsdominate          =  F
+alwayscomputeuservars       =  T
+alwaysrestrictcheckpoint    =  T
+charlimiting                =  T
+chkguardcellsinput          =  F
+chkguardcellsoutput         =  F
+conserveangmom              =  F
+converttoconsvdformeshcalls =  F
+converttoconsvdinmeshinterp =  T
+corners                     =  F
+dr_printtsteploc            =  T
+dr_shortenlaststepbeforetmax =  F
+dr_useposdefcomputedt       =  F
+drift_tuples                =  F
+eachprocwritesownabortlog   =  F
+eachprocwritessummary       =  F
+earlyblockdistadjustment    =  T
+enablemaskedgcfill          =  T
+entropy                     =  F
+flux_correct                =  T
+geometryoverride            =  F
+gr_bcenableapplymixedgds    =  T
+gr_lrefinemaxbytime         =  F
+gr_lrefinemaxreddobylogr    =  F
+gr_lrefinemaxreddobytime    =  F
+gr_pmrpadvancealllevels     =  F
+gr_pmrpamrerrorchecking     =  F
+gr_pmrpcartesianpm          =  F
+gr_pmrpconserve             =  F
+gr_pmrpconsvfluxdensities   =  T
+gr_pmrpconsvfluxes          =  F
+gr_pmrpcurvilinear          =  F
+gr_pmrpcurvilinearconserve  =  F
+gr_pmrpcylindricalpm        =  F
+gr_pmrpdiagonals            =  T
+gr_pmrpedgevalue            =  T
+gr_pmrpedgevalueinteg       =  F
+gr_pmrpemptycells           =  F
+gr_pmrpforceconsistency     =  T
+gr_pmrplsingularline        =  F
+gr_pmrpnopermanentguardcells =  F
+gr_pmrppolarpm              =  F
+gr_pmrppredcorr             =  F
+gr_pmrpsphericalpm          =  F
+gr_pmrptimingmpi            =  F
+gr_pmrptimingmpix           =  F
+gr_pmrpvardt                =  F
+hy_fallbacklowercfl         =  F
+hy_fullspecmsfluxhandling   =  T
+hy_usefluxeqn               =  F
+ignoreforcedplot            =  F
+initializeparticleatrestart =  F
+io_writemscalarintegrals    =  F
+plotfilegridquantitydp      =  F
+plotfilemetadatadp          =  F
+reducegcellfills            =  F
+refine_on_particle_count    =  F
+restart                     =  F
+shockdetect                 =  F
+shocklowercfl               =  F
+sim_bcsetbdryvar            =  F
+sim_forcecenterderefine     =  F
+sim_onelevelintegralsonly   =  F
+summaryoutputonly           =  F
+threadblocklistbuild        =  F
+threaddriverblocklist       =  F
+threaddriverwithinblock     =  F
+threadeoswithinblock        =  F
+threadhydroblocklist        =  F
+threadhydrowithinblock      =  F
+threadraytracebuild         =  F
+threadwithinblockbuild      =  F
+typematchedxfer             =  T
+unbiased_geometry           =  F
+updatehydrofluxes           =  T
+useburn                     =  F
+usecircuit                  =  F
+usecollectivehdf5           =  T
+useconductivity             =  F
+usecool                     =  F
+usecosmology                =  F
+usedamp                     =  T
+usedeleptonize              =  F
+usediffuse                  =  F
+usediffusecomputedtspecies  =  F
+usediffusecomputedttherm    =  F
+usediffusecomputedtvisc     =  F
+usediffusecomputedtmagnetic =  F
+useenergydeposition         =  F
+useflame                    =  F
+usegravity                  =  F
+useheat                     =  F
+useheatexchange             =  F
+usehydro                    =  T
+useincompns                 =  F
+useionize                   =  F
+uselegacylabels             =  T
+usemagneticresistivity      =  F
+usemassdiffusivity          =  F
+useopacity                  =  F
+useparticles                =  F
+useplasmastate              =  F
+usepolytrope                =  F
+useprimordialchemistry      =  F
+useprotonemission           =  F
+useprotonimaging            =  F
+useradtrans                 =  F
+useraytrace                 =  F
+usests                      =  F
+usestsfordiffusion          =  F
+usestir                     =  F
+usethomsonscattering        =  F
+usetreeray                  =  F
+useturb                     =  T
+useviscosity                =  F
+usexrayimaging              =  F
+use_3dfullctu               =  T
+use_pospreserv              =  F
+use_auxeinteqn              =  T
+use_avisc                   =  T [CHANGED]
+use_cma_advection           =  F
+use_cma_flattening          =  F
+use_flash_surr_blks_fill    =  T
+use_flattening              =  F
+use_gravhalfupdate          =  T
+use_hybridorder             =  F
+use_reduced_orrery          =  T
+use_steepening              =  F
+use_upwindtvd               =  F
+writestatsummary            =  T
+                                                                               
+ ==============================================================================
+                                                                               
+ Known units of measurement:
+                                                                               
+              Unit                          CGS Value                Base Unit
+  1                  cm                     1.0000                           cm
+  2                   s                     1.0000                            s
+  3                   g                     1.0000                            g
+  4                   K                     1.0000                            K
+  5                 esu                     1.0000                          esu
+  6                 mol                     1.0000                          mol
+  7                   m                     100.00                           cm
+  8                  km                    1.00000E+05                       cm
+  9                  pc                    3.08568E+18                       cm
+ 10                 kpc                    3.08568E+21                       cm
+ 11                 Mpc                    3.08568E+24                       cm
+ 12                 Gpc                    3.08568E+27                       cm
+ 13                Rsun                    6.96000E+10                       cm
+ 14                  AU                    1.49598E+13                       cm
+ 15                  yr                    3.15569E+07                        s
+ 16                 Myr                    3.15569E+13                        s
+ 17                 Gyr                    3.15569E+16                        s
+ 18                  kg                     1000.0                            g
+ 19                Msun                    1.98892E+33                        g
+ 20                 amu                    1.66054E-24                        g
+ 21             keV/c^2                    1.60218E-09                        g
+ 22                  eV                     11605.                            K
+ 23                   C                    2.99792E+09                      esu
+ 24                LFLY                    3.08568E+24                       cm
+ 25                TFLY                    2.05759E+17                        s
+ 26                MFLY                    9.88470E+45                        g
+ 27            clLength                    3.08568E+24                       cm
+ 28              clTime                    3.15569E+16                        s
+ 29              clMass                    1.98892E+48                        g
+ 30              clTemp                    1.16045E+07                        K
+-----------End of Units--------------------
+                                                                               
+ Known physical constants:
+                                                                               
+    Constant Name       Constant Value   cm       s        g        K        esu      mol
+  1              Newton    6.67408E-08   3.0     -2.0     -1.0      0.0      0.0      0.0    
+  2      speed of light    2.99792E+10   1.0     -1.0      0.0      0.0      0.0      0.0    
+  3              Planck    6.62607E-27   2.0     -1.0      1.0      0.0      0.0      0.0    
+  4     electron charge    4.80320E-10   0.0      0.0      0.0      0.0      1.0      0.0    
+  5       electron mass    9.10938E-28   0.0      0.0      1.0      0.0      0.0      0.0    
+  6         proton mass    1.67262E-24   0.0      0.0      1.0      0.0      0.0      0.0    
+  7      fine-structure    7.29735E-03   0.0      0.0      0.0      0.0      0.0      0.0    
+  8            Avogadro    6.02214E+23   0.0      0.0      0.0      0.0      0.0     -1.0    
+  9           Boltzmann    1.38065E-16   2.0     -2.0      1.0     -1.0      0.0      0.0    
+ 10  ideal gas constant    8.31446E+07   2.0     -2.0      1.0     -1.0      0.0     -1.0    
+ 11                Wien    0.28978       1.0      0.0      0.0      1.0      0.0      0.0    
+ 12    Stefan-Boltzmann    5.67037E-05   0.0     -3.0      1.0     -4.0      0.0      0.0    
+ 13  Radiation Constant    7.56572E-15  -1.0     -2.0      1.0     -4.0      0.0      0.0    
+ 14                  pi     3.1416       0.0      0.0      0.0      0.0      0.0      0.0    
+ 15                   e     2.7183       0.0      0.0      0.0      0.0      0.0      0.0    
+ 16               Euler    0.57722       0.0      0.0      0.0      0.0      0.0      0.0    
+ ==============================================================================
+                                                                               
+ Multifluid database: not configured in
+                                                                               
+ ==============================================================================
+ [ 06-04-2025  03:18:14.823 ] [gr_initGeometry] checking BCs for idir: 1
+ [ 06-04-2025  03:18:14.824 ] [gr_initGeometry] checking BCs for idir: 2
+ [ 06-04-2025  03:18:14.825 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.825 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 1
+ [GRID amr_refine_derefine] min blks 0    max blks 1    tot blks 1
+ [GRID amr_refine_derefine] min leaf blks 0    max leaf blks 1    tot leaf blks 1
+ [ 06-04-2025  03:18:14.827 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.828 ] [GRID gr_expandDomain]: iteration=1, create level=2
+ [ 06-04-2025  03:18:14.830 ] [Grid_markRefineDerefine]: gcArgs=-d------p---------+Eos
+ [ 06-04-2025  03:18:14.830 ] [Grid_fillGuardCells]: gcSet=-d-ee---p---vvv---+Eos
+ [ 06-04-2025  03:18:14.831 ] [mpi_amr_comm_setup]: buffer_dim_send=1, buffer_dim_recv=1
+ [ 06-04-2025  03:18:14.831 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.832 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 5
+ [GRID amr_refine_derefine] min blks 0    max blks 1    tot blks 5
+ [GRID amr_refine_derefine] min leaf blks 0    max leaf blks 1    tot leaf blks 4
+ [ 06-04-2025  03:18:14.833 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.834 ] [GRID gr_expandDomain]: iteration=2, create level=3
+ [ 06-04-2025  03:18:14.835 ] [mpi_amr_comm_setup]: buffer_dim_send=2105, buffer_dim_recv=1
+ [ 06-04-2025  03:18:14.836 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.836 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 21
+ [GRID amr_refine_derefine] min blks 3    max blks 4    tot blks 21
+ [GRID amr_refine_derefine] min leaf blks 2    max leaf blks 3    tot leaf blks 16
+ [ 06-04-2025  03:18:14.838 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.839 ] [GRID gr_expandDomain]: iteration=3, create level=4
+ [ 06-04-2025  03:18:14.842 ] [mpi_amr_comm_setup]: buffer_dim_send=3615, buffer_dim_recv=1891
+ [ 06-04-2025  03:18:14.843 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.844 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 37
+ [GRID amr_refine_derefine] min blks 5    max blks 7    tot blks 37
+ [GRID amr_refine_derefine] min leaf blks 4    max leaf blks 5    tot leaf blks 28
+ [ 06-04-2025  03:18:14.845 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.846 ] [GRID gr_expandDomain]: iteration=4, create level=5
+ [ 06-04-2025  03:18:14.851 ] [mpi_amr_comm_setup]: buffer_dim_send=5539, buffer_dim_recv=2987
+ [ 06-04-2025  03:18:14.852 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.852 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 53
+ [GRID amr_refine_derefine] min blks 8    max blks 10    tot blks 53
+ [GRID amr_refine_derefine] min leaf blks 6    max leaf blks 8    tot leaf blks 40
+ [ 06-04-2025  03:18:14.854 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.854 ] [GRID gr_expandDomain]: iteration=5, create level=6
+ [ 06-04-2025  03:18:14.862 ] [mpi_amr_comm_setup]: buffer_dim_send=6981, buffer_dim_recv=3591
+ [ 06-04-2025  03:18:14.863 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:14.864 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 69
+ [GRID amr_refine_derefine] min blks 10    max blks 12    tot blks 69
+ [GRID amr_refine_derefine] min leaf blks 8    max leaf blks 10    tot leaf blks 52
+ [ 06-04-2025  03:18:14.865 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:14.866 ] [GRID gr_expandDomain]: iteration=6, create level=6
+ [ 06-04-2025  03:18:14.875 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.876 ] [GRID gr_expandDomain]: iteration=7, create level=6
+ [ 06-04-2025  03:18:14.885 ] [GRID gr_expandDomain]: iteration=8, create level=6
+ [ 06-04-2025  03:18:14.894 ] memory: /proc vsize    (MiB):     3825.71 (min)       3829.77 (max)       3827.72 (avg)
+ [ 06-04-2025  03:18:14.895 ] memory: /proc rss      (MiB):      122.06 (min)        132.46 (max)        125.72 (avg)
+ [ 06-04-2025  03:18:14.895 ] memory: /proc vsize    (MiB):     3825.71 (min)       3829.77 (max)       3827.72 (avg)
+ [ 06-04-2025  03:18:14.895 ] memory: /proc rss      (MiB):      122.06 (min)        132.46 (max)        125.72 (avg)
+ [ 06-04-2025  03:18:14.896 ] [Hydro_init]: gcNeed=ddeeeeggppstvvvvvv
+ [ 06-04-2025  03:18:14.896 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.897 ] memory: /proc vsize    (MiB):     3825.71 (min)       3829.77 (max)       3827.72 (avg)
+ [ 06-04-2025  03:18:14.897 ] memory: /proc rss      (MiB):      122.06 (min)        132.46 (max)        125.81 (avg)
+ [ 06-04-2025  03:18:14.902 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0000
+ [ 06-04-2025  03:18:14.915 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0000
+ [ 06-04-2025  03:18:14.916 ] [IO_writePlotfile] open: type=plotfile name=sedov_hdf5_plt_cnt_0000
+ [ 06-04-2025  03:18:14.922 ] [IO_writePlotfile] close: type=plotfile name=sedov_hdf5_plt_cnt_0000
+ [ 06-04-2025  03:18:14.922 ] memory: /proc vsize    (MiB):     3825.71 (min)       4045.50 (max)       3863.68 (avg)
+ [ 06-04-2025  03:18:14.922 ] memory: /proc rss      (MiB):      123.66 (min)        142.35 (max)        128.88 (avg)
+ [ 06-04-2025  03:18:14.922 ] [Driver_evolveFlash]: Entering evolution loop
+ [ 06-04-2025  03:18:14.923 ] step: n=1 t=0.000000E+00 dt=1.000000E-10
+ [ 06-04-2025  03:18:14.923 ] [hy_uhd_unsplit]: gcNeed=ddeeeeggppstvvvvvv+Eos
+ [ 06-04-2025  03:18:14.923 ] [Grid_fillGuardCells]: gcSet=ddeeeeggppstvvvvvv+Eos
+ [ 06-04-2025  03:18:14.928 ] step: n=2 t=1.000000E-10 dt=2.000000E-10
+ [ 06-04-2025  03:18:14.932 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.934 ] step: n=3 t=3.000000E-10 dt=4.000000E-10
+ [ 06-04-2025  03:18:14.934 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.938 ] step: n=4 t=7.000000E-10 dt=8.000000E-10
+ [ 06-04-2025  03:18:14.943 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.944 ] step: n=5 t=1.500000E-09 dt=1.600000E-09
+ [ 06-04-2025  03:18:14.944 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.949 ] step: n=6 t=3.100000E-09 dt=3.200000E-09
+ [ 06-04-2025  03:18:14.953 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.954 ] step: n=7 t=6.300000E-09 dt=6.400000E-09
+ [ 06-04-2025  03:18:14.955 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.959 ] step: n=8 t=1.270000E-08 dt=1.280000E-08
+ [ 06-04-2025  03:18:14.963 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.965 ] step: n=9 t=2.550000E-08 dt=2.560000E-08
+ [ 06-04-2025  03:18:14.965 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.969 ] step: n=10 t=5.110000E-08 dt=5.120000E-08
+ [ 06-04-2025  03:18:14.974 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.975 ] step: n=11 t=1.023000E-07 dt=1.024000E-07
+ [ 06-04-2025  03:18:14.976 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.980 ] step: n=12 t=2.047000E-07 dt=2.048000E-07
+ [ 06-04-2025  03:18:14.984 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.986 ] step: n=13 t=4.095000E-07 dt=4.096000E-07
+ [ 06-04-2025  03:18:14.986 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:14.990 ] step: n=14 t=8.191000E-07 dt=8.192000E-07
+ [ 06-04-2025  03:18:14.994 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:14.996 ] step: n=15 t=1.638300E-06 dt=1.638400E-06
+ [ 06-04-2025  03:18:14.996 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.001 ] step: n=16 t=3.276700E-06 dt=3.276800E-06
+ [ 06-04-2025  03:18:15.005 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.006 ] step: n=17 t=6.553500E-06 dt=6.553600E-06
+ [ 06-04-2025  03:18:15.007 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.011 ] step: n=18 t=1.310710E-05 dt=1.310720E-05
+ [ 06-04-2025  03:18:15.015 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.017 ] step: n=19 t=2.621430E-05 dt=2.621440E-05
+ [ 06-04-2025  03:18:15.017 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.021 ] step: n=20 t=5.242870E-05 dt=5.242880E-05
+ [ 06-04-2025  03:18:15.026 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.027 ] step: n=21 t=1.048575E-04 dt=8.710488E-05
+ [ 06-04-2025  03:18:15.028 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.032 ] step: n=22 t=1.919624E-04 dt=7.668158E-05
+ [ 06-04-2025  03:18:15.036 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.037 ] step: n=23 t=2.686440E-04 dt=7.090266E-05
+ [ 06-04-2025  03:18:15.038 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.042 ] step: n=24 t=3.395466E-04 dt=6.943246E-05
+ [ 06-04-2025  03:18:15.046 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.048 ] step: n=25 t=4.089791E-04 dt=6.954723E-05
+ [ 06-04-2025  03:18:15.048 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.052 ] step: n=26 t=4.785263E-04 dt=7.027118E-05
+ [ 06-04-2025  03:18:15.057 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.058 ] step: n=27 t=5.487975E-04 dt=7.161305E-05
+ [ 06-04-2025  03:18:15.058 ] [mpi_amr_comm_setup]: buffer_dim_send=15541, buffer_dim_recv=9967
+ [ 06-04-2025  03:18:15.063 ] step: n=28 t=6.204105E-04 dt=7.319809E-05
+ [ 06-04-2025  03:18:15.067 ] [mpi_amr_comm_setup]: buffer_dim_send=7093, buffer_dim_recv=4687
+ [ 06-04-2025  03:18:15.068 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:15.069 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 165
+ [GRID amr_refine_derefine] min blks 26    max blks 29    tot blks 165
+ [GRID amr_refine_derefine] min leaf blks 20    max leaf blks 22    tot leaf blks 124
+ [ 06-04-2025  03:18:15.071 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:15.073 ] step: n=29 t=6.936086E-04 dt=7.636783E-05
+ [ 06-04-2025  03:18:15.074 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.080 ] step: n=30 t=7.699765E-04 dt=8.185553E-05
+ [ 06-04-2025  03:18:15.087 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.090 ] step: n=31 t=8.518320E-04 dt=8.907923E-05
+ [ 06-04-2025  03:18:15.090 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.097 ] step: n=32 t=9.409112E-04 dt=9.377404E-05
+ [ 06-04-2025  03:18:15.104 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.106 ] step: n=33 t=1.034685E-03 dt=9.772684E-05
+ [ 06-04-2025  03:18:15.107 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.113 ] step: n=34 t=1.132412E-03 dt=1.025376E-04
+ [ 06-04-2025  03:18:15.120 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.123 ] step: n=35 t=1.234950E-03 dt=1.075809E-04
+ [ 06-04-2025  03:18:15.123 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.130 ] step: n=36 t=1.342531E-03 dt=1.139015E-04
+ [ 06-04-2025  03:18:15.137 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.139 ] step: n=37 t=1.456432E-03 dt=1.017585E-04
+ [ 06-04-2025  03:18:15.139 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.146 ] step: n=38 t=1.558191E-03 dt=1.032678E-04
+ [ 06-04-2025  03:18:15.153 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.155 ] step: n=39 t=1.661458E-03 dt=1.104832E-04
+ [ 06-04-2025  03:18:15.156 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.162 ] step: n=40 t=1.771942E-03 dt=1.183924E-04
+ [ 06-04-2025  03:18:15.169 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.172 ] step: n=41 t=1.890334E-03 dt=1.261610E-04
+ [ 06-04-2025  03:18:15.172 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.179 ] step: n=42 t=2.016495E-03 dt=1.267626E-04
+ [ 06-04-2025  03:18:15.186 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.188 ] step: n=43 t=2.143258E-03 dt=1.252656E-04
+ [ 06-04-2025  03:18:15.189 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.195 ] step: n=44 t=2.268523E-03 dt=1.190325E-04
+ [ 06-04-2025  03:18:15.202 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.204 ] step: n=45 t=2.387556E-03 dt=1.152343E-04
+ [ 06-04-2025  03:18:15.205 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.212 ] step: n=46 t=2.502790E-03 dt=1.139530E-04
+ [ 06-04-2025  03:18:15.219 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.221 ] step: n=47 t=2.616743E-03 dt=1.124601E-04
+ [ 06-04-2025  03:18:15.221 ] [mpi_amr_comm_setup]: buffer_dim_send=24463, buffer_dim_recv=17815
+ [ 06-04-2025  03:18:15.228 ] step: n=48 t=2.729203E-03 dt=1.119626E-04
+ [ 06-04-2025  03:18:15.235 ] [mpi_amr_comm_setup]: buffer_dim_send=11087, buffer_dim_recv=8311
+ [ 06-04-2025  03:18:15.237 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:15.237 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 213
+ [GRID amr_refine_derefine] min blks 34    max blks 37    tot blks 213
+ [GRID amr_refine_derefine] min leaf blks 26    max leaf blks 28    tot leaf blks 160
+ [ 06-04-2025  03:18:15.239 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:15.241 ] step: n=49 t=2.841166E-03 dt=1.132368E-04
+ [ 06-04-2025  03:18:15.242 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.250 ] step: n=50 t=2.954402E-03 dt=1.161601E-04
+ [ 06-04-2025  03:18:15.257 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.260 ] step: n=51 t=3.070563E-03 dt=1.175393E-04
+ [ 06-04-2025  03:18:15.260 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.268 ] step: n=52 t=3.188102E-03 dt=1.207330E-04
+ [ 06-04-2025  03:18:15.276 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.279 ] step: n=53 t=3.308835E-03 dt=1.238467E-04
+ [ 06-04-2025  03:18:15.279 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.287 ] step: n=54 t=3.432682E-03 dt=1.265764E-04
+ [ 06-04-2025  03:18:15.295 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.297 ] step: n=55 t=3.559258E-03 dt=1.292436E-04
+ [ 06-04-2025  03:18:15.298 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.306 ] step: n=56 t=3.688502E-03 dt=1.321013E-04
+ [ 06-04-2025  03:18:15.314 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.316 ] step: n=57 t=3.820603E-03 dt=1.352464E-04
+ [ 06-04-2025  03:18:15.317 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.324 ] step: n=58 t=3.955849E-03 dt=1.384975E-04
+ [ 06-04-2025  03:18:15.332 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.335 ] step: n=59 t=4.094347E-03 dt=1.411357E-04
+ [ 06-04-2025  03:18:15.335 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.343 ] step: n=60 t=4.235482E-03 dt=1.437579E-04
+ [ 06-04-2025  03:18:15.351 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.353 ] step: n=61 t=4.379240E-03 dt=1.456351E-04
+ [ 06-04-2025  03:18:15.354 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.362 ] step: n=62 t=4.524875E-03 dt=1.479960E-04
+ [ 06-04-2025  03:18:15.370 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.372 ] step: n=63 t=4.672872E-03 dt=1.499179E-04
+ [ 06-04-2025  03:18:15.373 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.381 ] step: n=64 t=4.822789E-03 dt=1.514344E-04
+ [ 06-04-2025  03:18:15.389 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.391 ] step: n=65 t=4.974224E-03 dt=1.525882E-04
+ [ 06-04-2025  03:18:15.391 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.399 ] step: n=66 t=5.126812E-03 dt=1.534780E-04
+ [ 06-04-2025  03:18:15.407 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.410 ] step: n=67 t=5.280290E-03 dt=1.542091E-04
+ [ 06-04-2025  03:18:15.410 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.418 ] step: n=68 t=5.434499E-03 dt=1.550095E-04
+ [ 06-04-2025  03:18:15.426 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.428 ] step: n=69 t=5.589509E-03 dt=1.558733E-04
+ [ 06-04-2025  03:18:15.429 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.437 ] step: n=70 t=5.745382E-03 dt=1.567447E-04
+ [ 06-04-2025  03:18:15.445 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.447 ] step: n=71 t=5.902127E-03 dt=1.575535E-04
+ [ 06-04-2025  03:18:15.448 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.455 ] step: n=72 t=6.059680E-03 dt=1.582132E-04
+ [ 06-04-2025  03:18:15.463 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.466 ] step: n=73 t=6.217893E-03 dt=1.588573E-04
+ [ 06-04-2025  03:18:15.466 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.474 ] step: n=74 t=6.376751E-03 dt=1.589058E-04
+ [ 06-04-2025  03:18:15.482 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.485 ] step: n=75 t=6.535656E-03 dt=1.580493E-04
+ [ 06-04-2025  03:18:15.485 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.493 ] step: n=76 t=6.693706E-03 dt=1.569963E-04
+ [ 06-04-2025  03:18:15.501 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.503 ] step: n=77 t=6.850702E-03 dt=1.557322E-04
+ [ 06-04-2025  03:18:15.504 ] [mpi_amr_comm_setup]: buffer_dim_send=15907, buffer_dim_recv=15199
+ [ 06-04-2025  03:18:15.512 ] step: n=78 t=7.006434E-03 dt=1.544142E-04
+ [ 06-04-2025  03:18:15.520 ] [mpi_amr_comm_setup]: buffer_dim_send=7283, buffer_dim_recv=7103
+ [ 06-04-2025  03:18:15.521 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:15.522 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 245
+ [GRID amr_refine_derefine] min blks 40    max blks 42    tot blks 245
+ [GRID amr_refine_derefine] min leaf blks 30    max leaf blks 32    tot leaf blks 184
+ [ 06-04-2025  03:18:15.524 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:15.525 ] step: n=79 t=7.160848E-03 dt=1.534769E-04
+ [ 06-04-2025  03:18:15.526 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.535 ] step: n=80 t=7.314325E-03 dt=1.532009E-04
+ [ 06-04-2025  03:18:15.544 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.546 ] step: n=81 t=7.467526E-03 dt=1.529372E-04
+ [ 06-04-2025  03:18:15.547 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.555 ] step: n=82 t=7.620463E-03 dt=1.534111E-04
+ [ 06-04-2025  03:18:15.564 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.567 ] step: n=83 t=7.773875E-03 dt=1.544121E-04
+ [ 06-04-2025  03:18:15.567 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.576 ] step: n=84 t=7.928287E-03 dt=1.554259E-04
+ [ 06-04-2025  03:18:15.585 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.587 ] step: n=85 t=8.083713E-03 dt=1.568838E-04
+ [ 06-04-2025  03:18:15.588 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.597 ] step: n=86 t=8.240596E-03 dt=1.583280E-04
+ [ 06-04-2025  03:18:15.605 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.608 ] step: n=87 t=8.398924E-03 dt=1.600264E-04
+ [ 06-04-2025  03:18:15.608 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.617 ] step: n=88 t=8.558951E-03 dt=1.618024E-04
+ [ 06-04-2025  03:18:15.626 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.628 ] step: n=89 t=8.720753E-03 dt=1.634663E-04
+ [ 06-04-2025  03:18:15.629 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.638 ] step: n=90 t=8.884219E-03 dt=1.644856E-04
+ [ 06-04-2025  03:18:15.647 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.650 ] step: n=91 t=9.048705E-03 dt=1.656084E-04
+ [ 06-04-2025  03:18:15.650 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.660 ] step: n=92 t=9.214313E-03 dt=1.668725E-04
+ [ 06-04-2025  03:18:15.669 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.671 ] step: n=93 t=9.381186E-03 dt=1.681124E-04
+ [ 06-04-2025  03:18:15.672 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.681 ] step: n=94 t=9.549298E-03 dt=1.692699E-04
+ [ 06-04-2025  03:18:15.690 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.692 ] step: n=95 t=9.718568E-03 dt=1.702052E-04
+ [ 06-04-2025  03:18:15.693 ] [mpi_amr_comm_setup]: buffer_dim_send=18967, buffer_dim_recv=19279
+ [ 06-04-2025  03:18:15.702 ] step: n=96 t=9.888773E-03 dt=1.711320E-04
+ [ 06-04-2025  03:18:15.711 ] [mpi_amr_comm_setup]: buffer_dim_send=8759, buffer_dim_recv=9071
+ [ 06-04-2025  03:18:15.713 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:15.714 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 277
+ [GRID amr_refine_derefine] min blks 44    max blks 47    tot blks 277
+ [GRID amr_refine_derefine] min leaf blks 34    max leaf blks 36    tot leaf blks 208
+ [ 06-04-2025  03:18:15.716 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:15.720 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0001
+ [ 06-04-2025  03:18:15.745 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0001
+ [ 06-04-2025  03:18:15.746 ] step: n=97 t=1.005991E-02 dt=1.719925E-04
+ [ 06-04-2025  03:18:15.746 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.756 ] step: n=98 t=1.023190E-02 dt=1.727254E-04
+ [ 06-04-2025  03:18:15.766 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.768 ] step: n=99 t=1.040462E-02 dt=1.732557E-04
+ [ 06-04-2025  03:18:15.769 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.778 ] step: n=100 t=1.057788E-02 dt=1.737615E-04
+ [ 06-04-2025  03:18:15.788 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.791 ] step: n=101 t=1.075164E-02 dt=1.742550E-04
+ [ 06-04-2025  03:18:15.791 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.801 ] step: n=102 t=1.092590E-02 dt=1.747647E-04
+ [ 06-04-2025  03:18:15.811 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.813 ] step: n=103 t=1.110066E-02 dt=1.753067E-04
+ [ 06-04-2025  03:18:15.814 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.823 ] step: n=104 t=1.127597E-02 dt=1.755901E-04
+ [ 06-04-2025  03:18:15.833 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.836 ] step: n=105 t=1.145156E-02 dt=1.758678E-04
+ [ 06-04-2025  03:18:15.837 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.846 ] step: n=106 t=1.162742E-02 dt=1.760118E-04
+ [ 06-04-2025  03:18:15.857 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.860 ] step: n=107 t=1.180344E-02 dt=1.761684E-04
+ [ 06-04-2025  03:18:15.860 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.870 ] step: n=108 t=1.197960E-02 dt=1.763309E-04
+ [ 06-04-2025  03:18:15.880 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.882 ] step: n=109 t=1.215594E-02 dt=1.764672E-04
+ [ 06-04-2025  03:18:15.883 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.892 ] step: n=110 t=1.233240E-02 dt=1.765567E-04
+ [ 06-04-2025  03:18:15.902 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.905 ] step: n=111 t=1.250896E-02 dt=1.766200E-04
+ [ 06-04-2025  03:18:15.905 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.915 ] step: n=112 t=1.268558E-02 dt=1.766826E-04
+ [ 06-04-2025  03:18:15.925 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.927 ] step: n=113 t=1.286226E-02 dt=1.767610E-04
+ [ 06-04-2025  03:18:15.928 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.937 ] step: n=114 t=1.303902E-02 dt=1.768638E-04
+ [ 06-04-2025  03:18:15.947 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.950 ] step: n=115 t=1.321589E-02 dt=1.769963E-04
+ [ 06-04-2025  03:18:15.950 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.960 ] step: n=116 t=1.339288E-02 dt=1.771665E-04
+ [ 06-04-2025  03:18:15.970 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.973 ] step: n=117 t=1.357005E-02 dt=1.773823E-04
+ [ 06-04-2025  03:18:15.974 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:15.984 ] step: n=118 t=1.374743E-02 dt=1.776424E-04
+ [ 06-04-2025  03:18:15.994 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:15.996 ] step: n=119 t=1.392507E-02 dt=1.778645E-04
+ [ 06-04-2025  03:18:15.997 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.006 ] step: n=120 t=1.410294E-02 dt=1.780717E-04
+ [ 06-04-2025  03:18:16.016 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.019 ] step: n=121 t=1.428101E-02 dt=1.783317E-04
+ [ 06-04-2025  03:18:16.020 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.029 ] step: n=122 t=1.445934E-02 dt=1.786604E-04
+ [ 06-04-2025  03:18:16.039 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.041 ] step: n=123 t=1.463800E-02 dt=1.790724E-04
+ [ 06-04-2025  03:18:16.042 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.052 ] step: n=124 t=1.481708E-02 dt=1.795767E-04
+ [ 06-04-2025  03:18:16.061 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.064 ] step: n=125 t=1.499665E-02 dt=1.801696E-04
+ [ 06-04-2025  03:18:16.065 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.074 ] step: n=126 t=1.517682E-02 dt=1.808347E-04
+ [ 06-04-2025  03:18:16.084 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.087 ] step: n=127 t=1.535766E-02 dt=1.815464E-04
+ [ 06-04-2025  03:18:16.087 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.097 ] step: n=128 t=1.553920E-02 dt=1.822807E-04
+ [ 06-04-2025  03:18:16.107 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.109 ] step: n=129 t=1.572148E-02 dt=1.830263E-04
+ [ 06-04-2025  03:18:16.110 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.120 ] step: n=130 t=1.590451E-02 dt=1.837651E-04
+ [ 06-04-2025  03:18:16.129 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.132 ] step: n=131 t=1.608827E-02 dt=1.844130E-04
+ [ 06-04-2025  03:18:16.133 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.142 ] step: n=132 t=1.627269E-02 dt=1.850571E-04
+ [ 06-04-2025  03:18:16.152 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.155 ] step: n=133 t=1.645774E-02 dt=1.856583E-04
+ [ 06-04-2025  03:18:16.155 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.165 ] step: n=134 t=1.664340E-02 dt=1.861774E-04
+ [ 06-04-2025  03:18:16.175 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.177 ] step: n=135 t=1.682958E-02 dt=1.866067E-04
+ [ 06-04-2025  03:18:16.178 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.188 ] step: n=136 t=1.701619E-02 dt=1.869277E-04
+ [ 06-04-2025  03:18:16.197 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.200 ] step: n=137 t=1.720311E-02 dt=1.872953E-04
+ [ 06-04-2025  03:18:16.201 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.211 ] step: n=138 t=1.739041E-02 dt=1.876943E-04
+ [ 06-04-2025  03:18:16.221 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.224 ] step: n=139 t=1.757810E-02 dt=1.881100E-04
+ [ 06-04-2025  03:18:16.225 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.235 ] step: n=140 t=1.776621E-02 dt=1.885289E-04
+ [ 06-04-2025  03:18:16.245 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.248 ] step: n=141 t=1.795474E-02 dt=1.889417E-04
+ [ 06-04-2025  03:18:16.248 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.258 ] step: n=142 t=1.814369E-02 dt=1.893448E-04
+ [ 06-04-2025  03:18:16.269 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.271 ] step: n=143 t=1.833303E-02 dt=1.897381E-04
+ [ 06-04-2025  03:18:16.272 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.282 ] step: n=144 t=1.852277E-02 dt=1.901218E-04
+ [ 06-04-2025  03:18:16.292 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.295 ] step: n=145 t=1.871289E-02 dt=1.904261E-04
+ [ 06-04-2025  03:18:16.296 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.306 ] step: n=146 t=1.890332E-02 dt=1.906758E-04
+ [ 06-04-2025  03:18:16.316 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.319 ] step: n=147 t=1.909399E-02 dt=1.909096E-04
+ [ 06-04-2025  03:18:16.320 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.330 ] step: n=148 t=1.928490E-02 dt=1.911270E-04
+ [ 06-04-2025  03:18:16.340 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.343 ] step: n=149 t=1.947603E-02 dt=1.913312E-04
+ [ 06-04-2025  03:18:16.343 ] [mpi_amr_comm_setup]: buffer_dim_send=20485, buffer_dim_recv=21661
+ [ 06-04-2025  03:18:16.354 ] step: n=150 t=1.966736E-02 dt=1.915270E-04
+ [ 06-04-2025  03:18:16.364 ] [mpi_amr_comm_setup]: buffer_dim_send=9397, buffer_dim_recv=10045
+ [ 06-04-2025  03:18:16.366 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:16.367 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 293
+ [GRID amr_refine_derefine] min blks 47    max blks 50    tot blks 293
+ [GRID amr_refine_derefine] min leaf blks 36    max leaf blks 38    tot leaf blks 220
+ [ 06-04-2025  03:18:16.370 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:16.371 ] step: n=151 t=1.985889E-02 dt=1.917191E-04
+ [ 06-04-2025  03:18:16.372 ] [mpi_amr_comm_setup]: buffer_dim_send=21139, buffer_dim_recv=21949
+ [ 06-04-2025  03:18:16.384 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0002
+ [ 06-04-2025  03:18:16.409 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0002
+ [ 06-04-2025  03:18:16.410 ] step: n=152 t=2.005061E-02 dt=1.919121E-04
+ [ 06-04-2025  03:18:16.420 ] [mpi_amr_comm_setup]: buffer_dim_send=9699, buffer_dim_recv=10157
+ [ 06-04-2025  03:18:16.423 ] step: n=153 t=2.024252E-02 dt=1.921062E-04
+ [ 06-04-2025  03:18:16.424 ] [mpi_amr_comm_setup]: buffer_dim_send=21139, buffer_dim_recv=21949
+ [ 06-04-2025  03:18:16.434 ] step: n=154 t=2.043462E-02 dt=1.922998E-04
+ [ 06-04-2025  03:18:16.444 ] [mpi_amr_comm_setup]: buffer_dim_send=9699, buffer_dim_recv=10157
+ [ 06-04-2025  03:18:16.447 ] step: n=155 t=2.062692E-02 dt=1.924364E-04
+ [ 06-04-2025  03:18:16.448 ] [mpi_amr_comm_setup]: buffer_dim_send=21139, buffer_dim_recv=21949
+ [ 06-04-2025  03:18:16.458 ] step: n=156 t=2.081936E-02 dt=1.925600E-04
+ [ 06-04-2025  03:18:16.468 ] [mpi_amr_comm_setup]: buffer_dim_send=9699, buffer_dim_recv=10157
+ [ 06-04-2025  03:18:16.471 ] step: n=157 t=2.101192E-02 dt=1.926855E-04
+ [ 06-04-2025  03:18:16.471 ] [mpi_amr_comm_setup]: buffer_dim_send=21139, buffer_dim_recv=21949
+ [ 06-04-2025  03:18:16.481 ] step: n=158 t=2.120461E-02 dt=1.928152E-04
+ [ 06-04-2025  03:18:16.492 ] [mpi_amr_comm_setup]: buffer_dim_send=9699, buffer_dim_recv=10157
+ [ 06-04-2025  03:18:16.494 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:16.495 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 357
+ [GRID amr_refine_derefine] min blks 58    max blks 61    tot blks 357
+ [GRID amr_refine_derefine] min leaf blks 43    max leaf blks 46    tot leaf blks 268
+ [ 06-04-2025  03:18:16.497 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:16.499 ] step: n=159 t=2.139742E-02 dt=1.929540E-04
+ [ 06-04-2025  03:18:16.500 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.512 ] step: n=160 t=2.159037E-02 dt=1.931069E-04
+ [ 06-04-2025  03:18:16.524 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.527 ] step: n=161 t=2.178348E-02 dt=1.932794E-04
+ [ 06-04-2025  03:18:16.528 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.540 ] step: n=162 t=2.197676E-02 dt=1.934717E-04
+ [ 06-04-2025  03:18:16.552 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.555 ] step: n=163 t=2.217023E-02 dt=1.936833E-04
+ [ 06-04-2025  03:18:16.556 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.568 ] step: n=164 t=2.236392E-02 dt=1.939145E-04
+ [ 06-04-2025  03:18:16.580 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.583 ] step: n=165 t=2.255783E-02 dt=1.941672E-04
+ [ 06-04-2025  03:18:16.584 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.595 ] step: n=166 t=2.275200E-02 dt=1.944448E-04
+ [ 06-04-2025  03:18:16.608 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.611 ] step: n=167 t=2.294644E-02 dt=1.947514E-04
+ [ 06-04-2025  03:18:16.611 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.624 ] step: n=168 t=2.314119E-02 dt=1.950878E-04
+ [ 06-04-2025  03:18:16.636 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.639 ] step: n=169 t=2.333628E-02 dt=1.954517E-04
+ [ 06-04-2025  03:18:16.640 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.652 ] step: n=170 t=2.353173E-02 dt=1.958398E-04
+ [ 06-04-2025  03:18:16.665 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.669 ] step: n=171 t=2.372757E-02 dt=1.962470E-04
+ [ 06-04-2025  03:18:16.670 ] [mpi_amr_comm_setup]: buffer_dim_send=27157, buffer_dim_recv=27469
+ [ 06-04-2025  03:18:16.682 ] step: n=172 t=2.392382E-02 dt=1.966155E-04
+ [ 06-04-2025  03:18:16.694 ] [mpi_amr_comm_setup]: buffer_dim_send=12373, buffer_dim_recv=12685
+ [ 06-04-2025  03:18:16.697 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:16.698 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 421
+ [GRID amr_refine_derefine] min blks 69    max blks 71    tot blks 421
+ [GRID amr_refine_derefine] min leaf blks 51    max leaf blks 54    tot leaf blks 316
+ [ 06-04-2025  03:18:16.701 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:16.704 ] step: n=173 t=2.412044E-02 dt=1.969538E-04
+ [ 06-04-2025  03:18:16.704 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.718 ] step: n=174 t=2.431739E-02 dt=1.973052E-04
+ [ 06-04-2025  03:18:16.732 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.735 ] step: n=175 t=2.451469E-02 dt=1.976664E-04
+ [ 06-04-2025  03:18:16.736 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.749 ] step: n=176 t=2.471236E-02 dt=1.980340E-04
+ [ 06-04-2025  03:18:16.763 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.766 ] step: n=177 t=2.491040E-02 dt=1.984054E-04
+ [ 06-04-2025  03:18:16.767 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.780 ] step: n=178 t=2.510880E-02 dt=1.987770E-04
+ [ 06-04-2025  03:18:16.794 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.797 ] step: n=179 t=2.530758E-02 dt=1.991453E-04
+ [ 06-04-2025  03:18:16.798 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.811 ] step: n=180 t=2.550672E-02 dt=1.995069E-04
+ [ 06-04-2025  03:18:16.825 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.828 ] step: n=181 t=2.570623E-02 dt=1.998610E-04
+ [ 06-04-2025  03:18:16.829 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.842 ] step: n=182 t=2.590609E-02 dt=2.002066E-04
+ [ 06-04-2025  03:18:16.856 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.859 ] step: n=183 t=2.610630E-02 dt=2.005430E-04
+ [ 06-04-2025  03:18:16.860 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.873 ] step: n=184 t=2.630684E-02 dt=2.008697E-04
+ [ 06-04-2025  03:18:16.887 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.890 ] step: n=185 t=2.650771E-02 dt=2.011862E-04
+ [ 06-04-2025  03:18:16.891 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.904 ] step: n=186 t=2.670890E-02 dt=2.014922E-04
+ [ 06-04-2025  03:18:16.918 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.921 ] step: n=187 t=2.691039E-02 dt=2.017867E-04
+ [ 06-04-2025  03:18:16.922 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.935 ] step: n=188 t=2.711218E-02 dt=2.020691E-04
+ [ 06-04-2025  03:18:16.949 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.952 ] step: n=189 t=2.731424E-02 dt=2.023390E-04
+ [ 06-04-2025  03:18:16.953 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.966 ] step: n=190 t=2.751658E-02 dt=2.025966E-04
+ [ 06-04-2025  03:18:16.980 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:16.983 ] step: n=191 t=2.771918E-02 dt=2.028436E-04
+ [ 06-04-2025  03:18:16.984 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:16.997 ] step: n=192 t=2.792202E-02 dt=2.030821E-04
+ [ 06-04-2025  03:18:17.011 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.014 ] step: n=193 t=2.812511E-02 dt=2.033143E-04
+ [ 06-04-2025  03:18:17.015 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.028 ] step: n=194 t=2.832842E-02 dt=2.035320E-04
+ [ 06-04-2025  03:18:17.042 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.046 ] step: n=195 t=2.853195E-02 dt=2.036944E-04
+ [ 06-04-2025  03:18:17.046 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.060 ] step: n=196 t=2.873565E-02 dt=2.038560E-04
+ [ 06-04-2025  03:18:17.073 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.076 ] step: n=197 t=2.893950E-02 dt=2.040174E-04
+ [ 06-04-2025  03:18:17.077 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.091 ] step: n=198 t=2.914352E-02 dt=2.041787E-04
+ [ 06-04-2025  03:18:17.104 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.107 ] step: n=199 t=2.934770E-02 dt=2.043396E-04
+ [ 06-04-2025  03:18:17.108 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.121 ] step: n=200 t=2.955204E-02 dt=2.045026E-04
+ [ 06-04-2025  03:18:17.135 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.138 ] step: n=201 t=2.975654E-02 dt=2.046693E-04
+ [ 06-04-2025  03:18:17.139 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.153 ] step: n=202 t=2.996121E-02 dt=2.048414E-04
+ [ 06-04-2025  03:18:17.166 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.172 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0003
+ [ 06-04-2025  03:18:17.199 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0003
+ [ 06-04-2025  03:18:17.200 ] step: n=203 t=3.016605E-02 dt=2.050203E-04
+ [ 06-04-2025  03:18:17.201 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.214 ] step: n=204 t=3.037107E-02 dt=2.052065E-04
+ [ 06-04-2025  03:18:17.228 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.231 ] step: n=205 t=3.057628E-02 dt=2.054001E-04
+ [ 06-04-2025  03:18:17.231 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.245 ] step: n=206 t=3.078168E-02 dt=2.056004E-04
+ [ 06-04-2025  03:18:17.258 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.262 ] step: n=207 t=3.098728E-02 dt=2.058066E-04
+ [ 06-04-2025  03:18:17.262 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.275 ] step: n=208 t=3.119309E-02 dt=2.060183E-04
+ [ 06-04-2025  03:18:17.289 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.292 ] step: n=209 t=3.139910E-02 dt=2.062358E-04
+ [ 06-04-2025  03:18:17.293 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.306 ] step: n=210 t=3.160534E-02 dt=2.064588E-04
+ [ 06-04-2025  03:18:17.320 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.323 ] step: n=211 t=3.181180E-02 dt=2.066876E-04
+ [ 06-04-2025  03:18:17.324 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.337 ] step: n=212 t=3.201849E-02 dt=2.069222E-04
+ [ 06-04-2025  03:18:17.351 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.354 ] step: n=213 t=3.222541E-02 dt=2.071624E-04
+ [ 06-04-2025  03:18:17.355 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.368 ] step: n=214 t=3.243257E-02 dt=2.074083E-04
+ [ 06-04-2025  03:18:17.382 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.385 ] step: n=215 t=3.263998E-02 dt=2.076599E-04
+ [ 06-04-2025  03:18:17.386 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.399 ] step: n=216 t=3.284764E-02 dt=2.079172E-04
+ [ 06-04-2025  03:18:17.413 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.416 ] step: n=217 t=3.305556E-02 dt=2.081772E-04
+ [ 06-04-2025  03:18:17.417 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.430 ] step: n=218 t=3.326373E-02 dt=2.083830E-04
+ [ 06-04-2025  03:18:17.443 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.447 ] step: n=219 t=3.347212E-02 dt=2.085950E-04
+ [ 06-04-2025  03:18:17.448 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.461 ] step: n=220 t=3.368071E-02 dt=2.088135E-04
+ [ 06-04-2025  03:18:17.475 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.478 ] step: n=221 t=3.388952E-02 dt=2.090385E-04
+ [ 06-04-2025  03:18:17.479 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.492 ] step: n=222 t=3.409856E-02 dt=2.092705E-04
+ [ 06-04-2025  03:18:17.506 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.509 ] step: n=223 t=3.430783E-02 dt=2.095093E-04
+ [ 06-04-2025  03:18:17.510 ] [mpi_amr_comm_setup]: buffer_dim_send=26005, buffer_dim_recv=24355
+ [ 06-04-2025  03:18:17.523 ] step: n=224 t=3.451734E-02 dt=2.097549E-04
+ [ 06-04-2025  03:18:17.537 ] [mpi_amr_comm_setup]: buffer_dim_send=11925, buffer_dim_recv=11331
+ [ 06-04-2025  03:18:17.540 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:17.541 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 453
+ [GRID amr_refine_derefine] min blks 75    max blks 77    tot blks 453
+ [GRID amr_refine_derefine] min leaf blks 55    max leaf blks 58    tot leaf blks 340
+ [ 06-04-2025  03:18:17.543 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:17.545 ] step: n=225 t=3.472710E-02 dt=2.100068E-04
+ [ 06-04-2025  03:18:17.546 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.560 ] step: n=226 t=3.493710E-02 dt=2.102641E-04
+ [ 06-04-2025  03:18:17.575 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.578 ] step: n=227 t=3.514737E-02 dt=2.105252E-04
+ [ 06-04-2025  03:18:17.579 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.593 ] step: n=228 t=3.535789E-02 dt=2.107885E-04
+ [ 06-04-2025  03:18:17.608 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.611 ] step: n=229 t=3.556868E-02 dt=2.110525E-04
+ [ 06-04-2025  03:18:17.612 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.626 ] step: n=230 t=3.577973E-02 dt=2.113164E-04
+ [ 06-04-2025  03:18:17.641 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.644 ] step: n=231 t=3.599105E-02 dt=2.115795E-04
+ [ 06-04-2025  03:18:17.645 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.659 ] step: n=232 t=3.620263E-02 dt=2.118419E-04
+ [ 06-04-2025  03:18:17.674 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.677 ] step: n=233 t=3.641447E-02 dt=2.121034E-04
+ [ 06-04-2025  03:18:17.678 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.693 ] step: n=234 t=3.662658E-02 dt=2.123641E-04
+ [ 06-04-2025  03:18:17.707 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.710 ] step: n=235 t=3.683894E-02 dt=2.126237E-04
+ [ 06-04-2025  03:18:17.711 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.725 ] step: n=236 t=3.705156E-02 dt=2.128807E-04
+ [ 06-04-2025  03:18:17.740 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.743 ] step: n=237 t=3.726444E-02 dt=2.131340E-04
+ [ 06-04-2025  03:18:17.744 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.758 ] step: n=238 t=3.747758E-02 dt=2.133828E-04
+ [ 06-04-2025  03:18:17.773 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.776 ] step: n=239 t=3.769096E-02 dt=2.136265E-04
+ [ 06-04-2025  03:18:17.777 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.791 ] step: n=240 t=3.790459E-02 dt=2.138653E-04
+ [ 06-04-2025  03:18:17.806 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.809 ] step: n=241 t=3.811845E-02 dt=2.140997E-04
+ [ 06-04-2025  03:18:17.810 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.824 ] step: n=242 t=3.833255E-02 dt=2.142872E-04
+ [ 06-04-2025  03:18:17.839 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.842 ] step: n=243 t=3.854684E-02 dt=2.144721E-04
+ [ 06-04-2025  03:18:17.843 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.857 ] step: n=244 t=3.876131E-02 dt=2.146566E-04
+ [ 06-04-2025  03:18:17.872 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.875 ] step: n=245 t=3.897597E-02 dt=2.148415E-04
+ [ 06-04-2025  03:18:17.876 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.890 ] step: n=246 t=3.919081E-02 dt=2.150261E-04
+ [ 06-04-2025  03:18:17.905 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.908 ] step: n=247 t=3.940584E-02 dt=2.152096E-04
+ [ 06-04-2025  03:18:17.909 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.923 ] step: n=248 t=3.962105E-02 dt=2.153914E-04
+ [ 06-04-2025  03:18:17.938 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:17.941 ] step: n=249 t=3.983644E-02 dt=2.155709E-04
+ [ 06-04-2025  03:18:17.942 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:17.959 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0004
+ [ 06-04-2025  03:18:17.988 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0004
+ [ 06-04-2025  03:18:17.989 ] step: n=250 t=4.005201E-02 dt=2.157474E-04
+ [ 06-04-2025  03:18:18.004 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.008 ] step: n=251 t=4.026776E-02 dt=2.159215E-04
+ [ 06-04-2025  03:18:18.008 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.022 ] step: n=252 t=4.048368E-02 dt=2.160949E-04
+ [ 06-04-2025  03:18:18.037 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.040 ] step: n=253 t=4.069977E-02 dt=2.162684E-04
+ [ 06-04-2025  03:18:18.041 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.055 ] step: n=254 t=4.091604E-02 dt=2.164417E-04
+ [ 06-04-2025  03:18:18.070 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.073 ] step: n=255 t=4.113248E-02 dt=2.166145E-04
+ [ 06-04-2025  03:18:18.074 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.088 ] step: n=256 t=4.134910E-02 dt=2.167881E-04
+ [ 06-04-2025  03:18:18.103 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.107 ] step: n=257 t=4.156588E-02 dt=2.169635E-04
+ [ 06-04-2025  03:18:18.107 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.122 ] step: n=258 t=4.178285E-02 dt=2.171401E-04
+ [ 06-04-2025  03:18:18.136 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.140 ] step: n=259 t=4.199999E-02 dt=2.173179E-04
+ [ 06-04-2025  03:18:18.141 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.155 ] step: n=260 t=4.221731E-02 dt=2.174964E-04
+ [ 06-04-2025  03:18:18.170 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.173 ] step: n=261 t=4.243480E-02 dt=2.176760E-04
+ [ 06-04-2025  03:18:18.174 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.188 ] step: n=262 t=4.265248E-02 dt=2.178570E-04
+ [ 06-04-2025  03:18:18.203 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.206 ] step: n=263 t=4.287034E-02 dt=2.180390E-04
+ [ 06-04-2025  03:18:18.207 ] [mpi_amr_comm_setup]: buffer_dim_send=25429, buffer_dim_recv=24643
+ [ 06-04-2025  03:18:18.221 ] step: n=264 t=4.308837E-02 dt=2.182222E-04
+ [ 06-04-2025  03:18:18.235 ] [mpi_amr_comm_setup]: buffer_dim_send=11701, buffer_dim_recv=11443
+ [ 06-04-2025  03:18:18.238 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:18.239 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 485
+ [GRID amr_refine_derefine] min blks 80    max blks 82    tot blks 485
+ [GRID amr_refine_derefine] min leaf blks 59    max leaf blks 62    tot leaf blks 364
+ [ 06-04-2025  03:18:18.241 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:18.243 ] step: n=265 t=4.330660E-02 dt=2.184073E-04
+ [ 06-04-2025  03:18:18.244 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.259 ] step: n=266 t=4.352500E-02 dt=2.185944E-04
+ [ 06-04-2025  03:18:18.275 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.279 ] step: n=267 t=4.374360E-02 dt=2.187842E-04
+ [ 06-04-2025  03:18:18.279 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.295 ] step: n=268 t=4.396238E-02 dt=2.189766E-04
+ [ 06-04-2025  03:18:18.310 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.314 ] step: n=269 t=4.418136E-02 dt=2.191713E-04
+ [ 06-04-2025  03:18:18.315 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.330 ] step: n=270 t=4.440053E-02 dt=2.193355E-04
+ [ 06-04-2025  03:18:18.347 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.351 ] step: n=271 t=4.461987E-02 dt=2.194989E-04
+ [ 06-04-2025  03:18:18.351 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.367 ] step: n=272 t=4.483936E-02 dt=2.196661E-04
+ [ 06-04-2025  03:18:18.384 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.388 ] step: n=273 t=4.505903E-02 dt=2.198364E-04
+ [ 06-04-2025  03:18:18.388 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.404 ] step: n=274 t=4.527887E-02 dt=2.200090E-04
+ [ 06-04-2025  03:18:18.421 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.424 ] step: n=275 t=4.549888E-02 dt=2.201836E-04
+ [ 06-04-2025  03:18:18.425 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.441 ] step: n=276 t=4.571906E-02 dt=2.203602E-04
+ [ 06-04-2025  03:18:18.457 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.461 ] step: n=277 t=4.593942E-02 dt=2.205385E-04
+ [ 06-04-2025  03:18:18.462 ] [mpi_amr_comm_setup]: buffer_dim_send=28411, buffer_dim_recv=27415
+ [ 06-04-2025  03:18:18.478 ] step: n=278 t=4.615996E-02 dt=2.207189E-04
+ [ 06-04-2025  03:18:18.494 ] [mpi_amr_comm_setup]: buffer_dim_send=13099, buffer_dim_recv=12807
+ [ 06-04-2025  03:18:18.497 ] [GRID amr_refine_derefine]: initiating refinement
+ [ 06-04-2025  03:18:18.499 ] [GRID amr_refine_derefine]: redist. phase.  tot blks requested: 517
+ [GRID amr_refine_derefine] min blks 85    max blks 87    tot blks 517
+ [GRID amr_refine_derefine] min leaf blks 64    max leaf blks 66    tot leaf blks 388
+ [ 06-04-2025  03:18:18.502 ] [GRID amr_refine_derefine]: refinement complete
+ [ 06-04-2025  03:18:18.504 ] step: n=279 t=4.638068E-02 dt=2.209012E-04
+ [ 06-04-2025  03:18:18.504 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.520 ] step: n=280 t=4.660158E-02 dt=2.210853E-04
+ [ 06-04-2025  03:18:18.537 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.541 ] step: n=281 t=4.682266E-02 dt=2.212711E-04
+ [ 06-04-2025  03:18:18.541 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.557 ] step: n=282 t=4.704394E-02 dt=2.214584E-04
+ [ 06-04-2025  03:18:18.574 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.577 ] step: n=283 t=4.726539E-02 dt=2.216471E-04
+ [ 06-04-2025  03:18:18.578 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.594 ] step: n=284 t=4.748704E-02 dt=2.218368E-04
+ [ 06-04-2025  03:18:18.610 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.614 ] step: n=285 t=4.770888E-02 dt=2.220270E-04
+ [ 06-04-2025  03:18:18.615 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.630 ] step: n=286 t=4.793090E-02 dt=2.222174E-04
+ [ 06-04-2025  03:18:18.647 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.651 ] step: n=287 t=4.815312E-02 dt=2.224077E-04
+ [ 06-04-2025  03:18:18.651 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.667 ] step: n=288 t=4.837553E-02 dt=2.225976E-04
+ [ 06-04-2025  03:18:18.684 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.687 ] step: n=289 t=4.859813E-02 dt=2.227865E-04
+ [ 06-04-2025  03:18:18.688 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.704 ] step: n=290 t=4.882091E-02 dt=2.229751E-04
+ [ 06-04-2025  03:18:18.720 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.724 ] step: n=291 t=4.904389E-02 dt=2.231639E-04
+ [ 06-04-2025  03:18:18.725 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.740 ] step: n=292 t=4.926705E-02 dt=2.233527E-04
+ [ 06-04-2025  03:18:18.757 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.760 ] step: n=293 t=4.949041E-02 dt=2.235412E-04
+ [ 06-04-2025  03:18:18.761 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.777 ] step: n=294 t=4.971395E-02 dt=2.237284E-04
+ [ 06-04-2025  03:18:18.793 ] [mpi_amr_comm_setup]: buffer_dim_send=12383, buffer_dim_recv=13669
+ [ 06-04-2025  03:18:18.797 ] step: n=295 t=4.993768E-02 dt=2.239138E-04
+ [ 06-04-2025  03:18:18.798 ] [mpi_amr_comm_setup]: buffer_dim_send=26815, buffer_dim_recv=29509
+ [ 06-04-2025  03:18:18.816 ] [IO_writeCheckpoint] open: type=checkpoint name=sedov_hdf5_chk_0005
+ [ 06-04-2025  03:18:18.847 ] [IO_writeCheckpoint] close: type=checkpoint name=sedov_hdf5_chk_0005
+ [ 06-04-2025  03:18:18.848 ] [Driver_evolveFlash]: Exiting evolution loop
+ [ 06-04-2025  03:18:18.850 ] [IO_writePlotfile] open: type=plotfile name=sedov_forced_hdf5_plt_cnt_0000
+ [ 06-04-2025  03:18:18.859 ] [IO_writePlotfile] close: type=plotfile name=sedov_forced_hdf5_plt_cnt_0000
+ ==============================================================================
+ perf_summary: code performance summary for process            0
+                      beginning : 06-04-2025  03:18:14
+                         ending : 06-04-2025  03:18:18
+   seconds in monitoring period :                4.051
+      number of evolution steps :                  295
+ ------------------------------------------------------------------------------
+ accounting unit                       time sec  num calls   secs avg  time pct
+ ------------------------------------------------------------------------------
+ initialization                          0.114      1           0.114     2.826
+  eos                                    0.000      8           0.000     0.002
+  guardcell Barrier                      0.007      8           0.001     0.163
+  guardcell internal                     0.006      8           0.001     0.137
+   amr_guardcell                         0.005      8           0.001     0.127
+   eos gc                                0.000      7           0.000     0.003
+  writeCheckpoint                        0.016      1           0.016     0.390
+   restrictAll                           0.001      1           0.001     0.028
+  writePlotfile                          0.007      1           0.007     0.168
+ writePlotfile                           0.010      1           0.010     0.239
+ evolution                               3.926      1           3.926    96.909
+  cosmology                              0.000    590           0.000     0.003
+  Hydro                                  2.693    295           0.009    66.483
+   hydro_unsplit                         2.693    295           0.009    66.479
+    Head                                 0.627    295           0.002    15.475
+     guardcell Barrier                   0.001    295           0.000     0.019
+     guardcell internal                  0.625    295           0.002    15.436
+      amr_guardcell                      0.567    295           0.002    13.985
+      eos gc                             0.040    295           0.000     0.997
+    RiemannState                         1.495  11490           0.000    36.902
+    getFaceFlux                          0.270  11490           0.000     6.658
+    unsplitUpdate                        0.056  22980           0.000     1.393
+    conserveFluxes                       0.160    295           0.001     3.946
+    tail                                 0.000    295           0.000     0.004
+  sourceTerms                            0.000    295           0.000     0.004
+  Particles_advance                      0.000    295           0.000     0.002
+  Gravity potential                      0.000    295           0.000     0.002
+  diagnostics                            0.000    295           0.000     0.002
+  IO_output                              0.701    590           0.001    17.314
+   diagnostics                           0.137    590           0.000     3.385
+   checkpointing                         0.154      5           0.031     3.790
+    writeCheckpoint                      0.152      5           0.030     3.749
+     restrictAll                         0.007      5           0.001     0.172
+  Grid_updateRefinement                  0.435    295           0.001    10.745
+   eos                                   0.001     10           0.000     0.022
+   tree                                  0.434    294           0.001    10.715
+    markRefineDerefine                   0.249    147           0.002     6.152
+     guardcell Barrier                   0.000    147           0.000     0.003
+     guardcell internal                  0.207    147           0.001     5.117
+      amr_guardcell                      0.178    147           0.001     4.399
+      eos gc                             0.020    147           0.000     0.497
+    amr_refine_derefine                  0.104    147           0.001     2.575
+    updateData                           0.001    147           0.000     0.016
+   updateParticleRefinement              0.000    147           0.000     0.001
+  Driver_computeDt                       0.018    295           0.000     0.437
+ ==============================================================================
+ ==============================================================================
+ perf_summary: code performance summary statistics
+                      beginning : 06-04-2025  03:18:14
+                         ending : 06-04-2025  03:18:18
+   seconds in monitoring period :                4.051
+      number of evolution steps :                  295
+ ------------------------------------------------------------------------------
+ accounting unit                  max/proc (s)  min/proc (s) avg/proc (s)   num calls
+ ------------------------------------------------------------------------------
+ initialization                          0.114         0.113        0.113           1
+  eos                                    0.000         0.000        0.000           8
+  guardcell Barrier                      0.011         0.004        0.007           8
+  guardcell internal                     0.006         0.006        0.006           8
+   amr_guardcell                         0.006         0.005        0.005           8
+   eos gc                                0.000         0.000        0.000           7
+  writeCheckpoint                        0.016         0.015        0.015           1
+   restrictAll                           0.001         0.001        0.001           1
+  writePlotfile                          0.007         0.007        0.007           1
+ writePlotfile                           0.010         0.009        0.009           1
+ evolution                               3.926         3.926        3.926           1
+  cosmology                              0.000         0.000        0.000         590
+  Hydro                                  2.774         2.693        2.758         295
+   hydro_unsplit                         2.774         2.693        2.758         295
+    Head                                 0.712         0.575        0.625         295
+     guardcell Barrier                   0.078         0.001        0.065         295
+     guardcell internal                  0.633         0.497        0.559         295
+      amr_guardcell                      0.576         0.449        0.506         295
+      eos gc                             0.040         0.029        0.035         295
+    RiemannState                         1.636         1.495        1.575       11490
+    getFaceFlux                          0.288         0.270        0.280       11490
+    unsplitUpdate                        0.059         0.056        0.057       22980
+    conserveFluxes                       0.184         0.032        0.135         295
+    tail                                 0.000         0.000        0.000         295
+  sourceTerms                            0.000         0.000        0.000         295
+  Particles_advance                      0.000         0.000        0.000         295
+  Gravity potential                      0.000         0.000        0.000         295
+  diagnostics                            0.000         0.000        0.000         295
+  IO_output                              0.708         0.701        0.705         590
+   diagnostics                           0.138         0.133        0.136         590
+   checkpointing                         0.154         0.151        0.151           5
+    writeCheckpoint                      0.152         0.150        0.151           5
+     restrictAll                         0.007         0.007        0.007           5
+  Grid_updateRefinement                  0.435         0.435        0.435         295
+   eos                                   0.001         0.001        0.001          10
+   tree                                  0.434         0.434        0.434         294
+    markRefineDerefine                   0.252         0.249        0.250         147
+     guardcell Barrier                   0.000         0.000        0.000         147
+     guardcell internal                  0.208         0.176        0.190         147
+      amr_guardcell                      0.179         0.153        0.164         147
+      eos gc                             0.020         0.014        0.017         147
+    amr_refine_derefine                  0.104         0.102        0.103         147
+    updateData                           0.001         0.001        0.001         147
+   updateParticleRefinement              0.000         0.000        0.000         147
+  Driver_computeDt                       0.018         0.013        0.014         295
+ ==============================================================================
+ [ 06-04-2025  03:18:18.861 ] LOGFILE_END: FLASH run complete.
